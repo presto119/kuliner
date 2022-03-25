@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuliner</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- 외부에서 가져온 파일은 내가 작성한 파일보다 무조건 위쪽에 선언한다. -->
+    <script src="https://kit.fontawesome.com/c2a8ed99bd.js"></script>
+    <script src="./js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+<body>
+    <!-- <i class="fab fa-facebook-f wow fadeInRight"></i> -->
+    <!-- <h1 class="wow fadeInRight">Title</h1> -->
+    <div id="header">
+        <div id="top">
+            <div class="wrap">
+                <div class="left">
+                    <ul>
+                        <li><p><i class="far fa-map"></i>&nbsp;Jl. Little Kyoto SA, 01 64521</p></li>
+                        <li><p><i class="fas fa-phone-square-alt"></i>&nbsp;023 5608 4669</p></li>
+                        <!-- <li><a href="tel:02356084669"><i class="fas fa-phone-square-alt"></i>&nbsp;023 5608 4669</a></li> -->
+                    </ul>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li><a href="#" target="_blank" title="페이스북 바로가기"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#" target="_blank" title="트위터 바로가기"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" target="_blank" title="핀터레스트 바로가기"><i class="fab fa-pinterest-square"></i></a></li>
+                        <li><a href="#" target="_blank" title="유튜브 바로가기"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="mail:custmer@kuliner.com" title="메일보내기"><i class="far fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="main"><!--배경이미지 공간-->
+            <div class="dark"><!--배경이미지 암막-->
+                <div class="wrap"><!--w1160; m0-auto;-->
+                    <div class="logo">
+                        <a href=""><img src="./img/logo.png" alt=""></a>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">OUR STORY</a></li>
+                            <li><a href="#">SPECIAL DISHES</a></li>
+                            <li><a href="#">DISHES</a></li>
+                            <li><a href="#">SERVICE</a></li>
+                        </ul>
+                        <div class="reserve_btn">
+                            <a href="#">RESERVSTION</a>
+                        </div>
+                    </div>
+                </div><!--/.wrap ==> 헤더의 메뉴 공간-->
+                <div class="main_title">
+                    <div class="title">
+                        <h1 class="font_pacifico wow fadeInDown">Premium food at affordable price.</h1>
+                        <p class="wow fadeInUp">A truly unique Danish food experience, you can get at lunch time in Kyoto</p>
+                        <ul>
+                            <li class="wow fadeInLeft"><a href="#">learn more</a></li>
+                            <li class="wow fadeInRight"><a href="#">get the app</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!--/.dark-->
+        </div><!--/#main-->
+    </div>
+
+    
+    <div class="story">
+        <div class="wrap">
+            <div class="title_text">
+                <h2 class="title font_pacifico wow fadeInDown">Discover <span class="font_pacifico">Our Story</span></h2>
+                <p class="sub_title wow fadeInUp">HI, WELCOME TO KULINER</p>
+            </div>
+            <div class="cont">
+                <div class="img_part wow fadeInLeft"></div>
+                <div class="txt_part wow fadeInRight">
+                    <p>In a country where understatement and simplicity reign, the unpretentious smorrebrod is a national dish. There are countless variations, from minimal to lavish, but all reflect straightforward Scandinavian sensibilities: simple, honest, local ingredients attractively presented with little waste
+                    </p>
+                    <a href=""><img src="./img/separator-img.png" alt=""></a>
+                </div>
+            </div>
+            <div class="deco_img wow fadeInUp">
+                <img src="./img/description-1.png" alt="접시 데코 이미지">
+            </div>
+        </div>
+    </div>
+<!--
+    <div id="midEdu1">
+        <h3>콘텐츠 내부에 암막과 문자를 단계별로 위치시키기</h3>
+        <div class="outer">
+            <div class="dark_bg">
+                <h3 class="font_pacifico">Shrimp Dish</h3>
+                <p>summer squash, tomatoes & nasturtium vinaigrette</p>
+                <span class="price font_pacifico">$79<small class="font_pacifico">.00</small></span>
+            </div>
+        </div>
+    </div>
+-->
+
+    <div id="special"><!--배경색상:#ededed-->
+        <!--뒷면의 배경 이미지 및 암막-->
+        <div id="top_bg">
+            <div class="dark_bg"></div>
+        </div>
+        <!--타이틀 및 콘텐츠 공간 + margin-top:-360px; 선언한여 #top_bg위로 이동시킨다.-->
+        <div id="main_cont">
+            <div class="wrap">
+                <div class="title">
+                    <h2 class="font_pacifico">Specials Dishes</h2>
+                    <p>BEST CHOICE</p>
+                </div>
+                <div class="cont">
+                    <!--1-->
+                    <div class="box" onclick="location.href='./detail_01.html'">
+                        <div class="darkBox_bg">
+                            <h3 class="font_pacifico">pasta with olive</h3>
+                            <p>Potato puree, aged cheddar & crunchy garnishes</p>
+                            <span class="font_pacifico">$47<small>.00</small></span>
+                        </div>
+                    </div>
+                    <!--2-->
+                    <div class="box">
+                        <div class="darkBox_bg">
+                            <h3 class="font_pacifico">shrimp dish</h3>
+                            <p>Summer squash, tomatoes & nasturtium vinaigrette</p>
+                            <span class="font_pacifico">$76<small class="font_pacifico">.00</small></span>
+                        </div>
+                    </div>
+                    <!--3-->
+                    <div class="box">
+                        <div class="darkBox_bg">
+                            <h3 class="font_pacifico">noodle in sweet source</h3>
+                            <p>Cucumbers, olives, goat cheese & mint</p>
+                            <span class="font_pacifico">$35<small class="font_pacifico">.00</small></span>
+                        </div>
+                    </div>
+                    <!--4-->
+                    <div class="box">
+                        <div class="darkBox_bg">
+                            <h3 class="font_pacifico">steak in love</h3>
+                            <p>Smoked Butter & Lime</p>
+                            <span class="font_pacifico">$105<small class="font_pacifico">.00</small></span>
+                        </div>
+                    </div>
+                    <!--5-->
+                    <div class="box">
+                        <div class="darkBox_bg">
+                            <h3 class="font_pacifico">desert with bee</h3>
+                            <p>Burrata cheese, arugula, balsamic vinegar, and basil</p>
+                            <span class="font_pacifico">$23<small class="font_pacifico">.00</small></span>
+                        </div>
+                    </div>
+                    <div class="arrow_img">
+                        <a href=""><img src="./img/separator-img.png" alt=""></a>
+                    </div>
+                </div>
+            </div><!--/.wrap-->
+        </div><!--/#main_cont-->
+    </div>
+<!--
+    <div id="midEdue2">
+        <h3>wowjs 의 작동 연기 시간 제어</h3>
+        <div class="frame">
+            <div class="box wow fadeInUp" data-wow-delay="1s"></div>
+            <div class="box wow fadeInUp" data-wow-delay="2s"></div>
+            <div class="box wow fadeInUp" data-wow-delay="3s"></div>
+        </div>
+        <div class="text_fx">
+            <h1>
+               <span class="wow fadeInRight" data-wow-delay="0s">O</span> 
+               <span class="wow fadeInRight" data-wow-delay="0.5s">u</span> 
+               <span class="wow fadeInRight" data-wow-delay="1s">r</span> 
+               <span class="wow fadeInRight" data-wow-delay="1.5s">&nbsp;</span>
+               <span class="wow fadeInRight" data-wow-delay="2s">S</span> 
+               <span class="wow fadeInRight" data-wow-delay="2.5s">t</span> 
+               <span class="wow fadeInRight" data-wow-delay="3s">o</span> 
+               <span class="wow fadeInRight" data-wow-delay="3.5s">r</span> 
+               <span class="wow fadeInRight" data-wow-delay="4s">y</span> 
+            </h1>
+        </div>
+    </div>
+-->
+
+
+
+
+    <div id="dishes">
+        <div class="wrap">
+            <div class="title_part">
+                <h2 class="font_pacifico">Dishes</h2>
+                <p>OUR MENU</p>
+            </div>
+
+            <div class="cont_part">
+                <!-- 1 -->
+                <div class="cate_box">
+                    <div class="cate_title">
+                        <h3>» SOUPES & APPETIZERS «</h3>
+                    </div>
+                    <div class="cate_detail">
+                        <div class="left wow fadeInLeft" data-wow-delay="1s">
+                            <div class="menu">
+                                <h3>Fried breaded fillet of plaice</h3>
+                                <p>served with homemade remoulade and lemon</p>
+                                <span class="font_pacifico">$22<small class="font_pacifico">.00</small></span>
+                            </div>
+                            <div class="menu">
+                                <h3>Butter fried fillet of plaice</h3>
+                                <p>served with homemade remoulade, lemon and dill</p>
+                                <span class="font_pacifico">$23<small class="font_pacifico">.00</small></span>
+                            </div>
+                            <div class="menu">
+                                <h3>Fried fishcake</h3>
+                                <p>with homemade remoulade, lemon and dill</p>
+                                <span class="font_pacifico">$27<small class="font_pacifico">.00</small></span>
+                            </div>
+                        </div>
+                        <div class="right wow fadeInRight" data-wow-delay="1s">
+                            <div class="menu">
+                                <h3>Chicken salad</h3>
+                                <p>with homemade mayonnaise and fried bacon served on toasted white bread</p>
+                                <span class="font_pacifico">$24<small class="font_pacifico">.00</small></span>
+                            </div>
+                            <div class="menu">
+                                <h3>Smoked salmon</h3>
+                                <p>served with Danish smoked cheese cream and fresh herbs on toasted rye bread</p>
+                                <span class="font_pacifico">$33<small class="font_pacifico">.00</small></span>
+                            </div>
+                        </div>
+                        <div class="centerLine wow fadeInDown"></div>
+                    </div>
+                </div><!--/.soupes-->
+                <!-- 2 -->
+                <div class="cate_box">
+                    <div class="cate_title">
+                        <h3>» MAIN DISHES «</h3>
+                    </div>
+                    <div class="cate_detail">
+                        <div class="left wow fadeInLeft" data-wow-delay="1s">
+                            <div class="menu">
+                                <h3>Meatballs</h3>
+                                <p>served on rye bread with homemade pickled red cabbage and pickled cucumbers</p>
+                                <span class="font_pacifico">$52<small class="font_pacifico">.00</small></span>
+                            </div>
+                            <div class="menu">
+                                <h3>Creamed chicken and asparagus in crustade</h3>
+                                <p>Served with fried bacon and crispy chicken skin</p>
+                                <span class="font_pacifico">$87<small class="font_pacifico">.00</small></span>
+                            </div>
+                            <div class="menu">
+                                <h3>Slices of roasted pork</h3>
+                                <p>served with rye bread with homemade pickled red cabbage and pickled cucumbers</p>
+                                <span class="font_pacifico">$56<small class="font_pacifico">.00</small></span>
+                            </div>
+                            <div class="menu">
+                                <h3>Cod</h3>
+                                <p>carefully boiled, served with mustard sauce, boiled potatoes, pickled beetroot, chopped onions, chopped hard boiled eggs and fried bacon</p>
+                                <span class="font_pacifico">$76<small class="font_pacifico">.00</small></span>
+                            </div>
+                        </div>
+
+                        <div class="right wow fadeInRight" data-wow-delay="1s">
+                            <div class="menu">
+                                <h3>PUK Maxi beef sandwich</h3>
+                                <p>with homemade mayonnaise and fried bacon served on toasted white bread</p>
+                                <span class="font_pacifico">$64<small class="font_pacifico">.00</small></span>
+                            </div>
+                            <div class="menu">
+                                <h3>Herrings with curry</h3>
+                                <p>served with gravy, fried onions and pickled cucumbers. Served with French fries and remoulade.</p>
+                                <span class="font_pacifico">$69<small class="font_pacifico">.00</small></span>
+                            </div>
+                            <div class="menu">
+                                <h3>Minced beef</h3>
+                                <p>served with horseradish, raw onions, capers, pickled beetroots, pickled vegetables and raw egg yolk</p>
+                                <span class="font_pacifico">$87<small class="font_pacifico">.00</small></span>
+                            </div>
+                        </div>
+                        <div class="centerLine wow fadeInDown"></div>
+                    </div>
+                </div><!--/.mainDishes-->
+                <!-- 3 -->
+                <div class="cate_box">
+                    <div class="cate_title">
+                        <h3>» DESERTES & DRINKES «</h3>
+                    </div>
+                    <div class="cate_detail">
+                        <div class="left wow fadeInLeft" data-wow-delay="1s">
+                            <div class="menu">
+                                <h3>Corned veal brisket</h3>
+                                <p>with pickels and horsradish</p>
+                                <span class="font_pacifico">$22<small class="font_pacifico">.00</small></span>
+                            </div>
+                            <div class="menu">
+                                <h3>Deep fried camembert</h3>
+                                <p>served with blackcurrant jam</p>
+                                <span class="font_pacifico">$24<small class="font_pacifico">.00</small></span>
+                            </div>
+                            <div class="menu">
+                                <h3>Prawn cocktail</h3>
+                                <p>served with homemade 1000 island-dressing and herb salat</p>
+                                <span class="font_pacifico">$24<small class="font_pacifico">.00</small></span>
+                            </div>
+                        </div>
+
+                        <div class="right wow fadeInRight" data-wow-delay="1s">
+                            <div class="menu">
+                                <h3>Danish blue cheese</h3>
+                                <p>from the danis island Bornholm, served with raw onions and raw egg yolk</p>
+                                <span class="font_pacifico">$24<small class="font_pacifico">.00</small></span>
+                            </div>
+                            <div class="menu">
+                                <h3>Matured cheese</h3>
+                                <p>with fat from pork, raw onions and savoury jelly</p>
+                                <span class="font_pacifico">$23<small class="font_pacifico">.00</small></span>
+                            </div>
+                        </div>
+                        <div class="centerLine wow fadeInDown"></div>
+                    </div>
+                </div>
+                <div class="arrow_img">
+                    <a href=""><img src="./img/separator-img.png" alt=""></a>
+                </div>
+            </div><!--/.cont_part-->
+        </div>
+    </div>
+
+    <div id="service">
+
+    </div>
+
+
+
+</body>
+</html>
