@@ -71,25 +71,25 @@ a{text-decoration: none;}
 #header #main .dark .main_title .title ul li:hover a{color: #f60; background-color: rgba(225,225,225,0.4);}
 
 /* #story part */
-.story{width: 100%; height: 600px; overflow: hidden;}
-.story .wrap{width: 1160px; height: 100%; padding: 0 10px; margin: 0 auto; overflow: hidden;}
-.story .wrap .title_text{text-align: center; padding: 60px 0 40px 0;}
-.story .wrap .title_text .title{font-size: 54px; line-height: 72px; color: #555; }
-.story .wrap .title_text .title span{color: #f60;}
+#story{width: 100%; height: 600px; overflow: hidden;}
+#story .wrap{width: 1160px; height: 100%; padding: 0 10px; margin: 0 auto; overflow: hidden;}
+#story .wrap .title_text{text-align: center; padding: 60px 0 40px 0;}
+#story .wrap .title_text .title{font-size: 54px; line-height: 72px; color: #555; }
+#story .wrap .title_text .title span{color: #f60;}
 
-.story .wrap .title_text p{font-size: 16px; color: #555; padding-top: 20px; }
+#story .wrap .title_text p{font-size: 16px; color: #555; padding-top: 20px; }
 
-.story .wrap .cont{font-size: 0;}
-.story .wrap .cont > div{display: inline-block; width: 50%; padding: 0 15px; vertical-align: middle;}
-.story .wrap .cont > div.img_part{height: 200px; background-image: url(../img/cook-01.jpg);  border-radius: 8px;  background-position: 50% 50%; background-size: cover;
+#story .wrap .cont{font-size: 0;}
+#story .wrap .cont > div{display: inline-block; width: 50%; padding: 0 15px; vertical-align: middle;}
+#story .wrap .cont > div.img_part{height: 200px; background-image: url(../img/cook-01.jpg);  border-radius: 8px;  background-position: 50% 50%; background-size: cover;
 }
-.story .wrap .cont > div.txt_part{text-align: center;}
-.story .wrap .cont > div.txt_part p{font-size: 16px; color: #555; padding-bottom: 40px;}
-.story .wrap .cont > div.txt_part a{height: 19px; display: inline-block;}
-.story .wrap .cont > div.txt_part a img{}
+#story .wrap .cont > div.txt_part{text-align: center;}
+#story .wrap .cont > div.txt_part p{font-size: 16px; color: #555; padding-bottom: 40px;}
+#story .wrap .cont > div.txt_part a{height: 19px; display: inline-block;}
+#story .wrap .cont > div.txt_part a img{}
 
-.story .wrap .deco_img{padding-top: 100px;}
-.story .wrap .deco_img img{width: 100%;}
+#story .wrap .deco_img{padding-top: 100px;}
+#story .wrap .deco_img img{width: 100%;}
 
 
 /* [콘텐츠 내부에 암막과 문자를 단계별로 위치시키기] */
@@ -243,7 +243,7 @@ a{text-decoration: none;}
     background-attachment: fixed;
     background-size: 100%;
     background-position: 50% 50%;
-    padding-top: 20px;
+    padding: 20px 0;
 }
 #dishes .wrap{
     width: 1160px;
@@ -319,6 +319,275 @@ a{text-decoration: none;}
     margin-bottom: 60px; 
     text-align: center;
 }
+
+/*service part*/
+#service{
+    background-color: #ededed; 
+    padding: 60px;
+}
+#service .wrap{
+    width: 1160px; 
+    padding: 0 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+#service .wrap .title{
+    color: #555;
+}
+#service .wrap .title h3{
+    padding-bottom: 20px;
+    font-size: 54px; 
+    line-height: 72px;
+}
+#service .wrap .title p{
+    padding-bottom: 80px;
+    font-size: 16px;
+}
+
+#service .wrap .content{font-size: 0;}
+#service .wrap .content .contBox{
+    width: 360px; height: 360px;
+    display: inline-block;
+    background-color: #fee;
+    padding: 40px;
+    border-radius: 8px;
+    margin: 0 10px;
+    text-align: center;
+    color: #555;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+#service .wrap .content .contBox:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #f99;
+}
+#service .wrap .content .contBox img{
+    margin-top: 40px;
+}
+#service .wrap .content .contBox h3{
+    font-size: 24px;
+    padding: 20px 0;
+    text-transform: uppercase;
+}
+#service .wrap .content .contBox p{
+    font-size: 16px;
+}
+
+#service .wrap .arrow_img{
+    text-align: center;
+    margin-top: 60px;
+}
+
+
+/*subscribe part*/
+#subscribe{
+    width: 100%; height: 460px;
+    background-image: url(../img/6.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+}
+#subscribe .dark{
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    /*display: table;*/
+    position: relative;
+}
+#subscribe .dark .cont{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1160px;
+    margin: 0 auto;
+    /*display: table-cell;
+    text-align: center;
+    vertical-align: middle;*/
+    text-align: center;
+    color: #fff;
+}
+#subscribe .dark .cont h3{
+    font-size: 54px;
+    line-height: 72px;
+    padding: 20px 0;
+}
+#subscribe .dark .cont p{
+    font-size: 16px;
+    padding-bottom: 40px;
+}
+#subscribe .dark .cont .mailBox{
+    width: 740px; height: 60px;
+    border: 1px solid #f60;
+    border-radius: 8px;
+    background-color: #fff;
+    margin: 0 auto;
+    font-size: 0;
+}
+#subscribe .dark .cont .mailBox input{
+    vertical-align: top;
+    width: calc(100% - 60px);
+    height: 100%;
+    padding: 0 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    outline-color: #f60;
+}
+#subscribe .dark .cont .mailBox button{
+    vertical-align: top;
+    height: 100%; width: 60px;
+    border: none;
+    background-color: transparent;
+    color:#f60;
+    font-size: 20px;
+    cursor: pointer;
+    outline-color: #f60;
+}
+
+
+
+
+/*[중간교육] 구글맵 연동하기*/
+#midEdu3 #map_g{
+    width: 500px; height: 400px;
+    background: #aaf;
+}
+
+
+/*register part*/
+#register{
+    background-color: #ededed;
+    padding: 20px 0;
+}
+#register .wrap{
+    width: 1160px;
+    margin: 0 auto;
+    padding: 0 10px;
+    font-size: 0;
+}
+#register .wrap > div{
+    display: inline-block;
+    width: calc(50% - 40px);
+    margin: 0 20px;
+}
+#register .wrap #map{
+    height: 400px;
+}
+#register .wrap .cont{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+#register .wrap .cont .title{
+    font-size: 54px;
+    line-height: 72px;
+    color: #555;
+    text-align: center;
+    padding-bottom: 20px;
+}
+#register .wrap .cont .info{font-size: 0;}
+#register .wrap .cont .info > div{
+    width: 100%;
+    font-size: 0px;
+    padding:0 20px;
+    border-bottom: 1px solid #999;
+    margin-bottom: 8px;
+}
+
+#register .wrap .cont .info input{
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    line-height: 35px;
+    color: #999;
+}
+#register .wrap .cont .send_check{
+    font-size: 0;
+}
+#register .wrap .cont .send_check input{
+    display: inline-block;
+    width: 12px;
+}
+#register .wrap .cont .send_check p{
+    display: inline-block;
+    font-size: 12px;
+    vertical-align: top;
+}
+
+#register .wrap .cont .submit_btn{
+    width: 240px; height: 41px;
+    font-size: 18px;
+    background-color: #f60;
+    text-align: center;
+    border-radius: 8px;
+    position: absolute;
+    right: 0;
+}
+#register .wrap .cont .submit_btn button{
+    width: 100%; height: 100%;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    line-height: 41px;
+    cursor: pointer;
+}
+
+/*footer part*/
+
+#footer{
+    width: 100%; height: 220px;
+    background-color: #000;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#footer ul{
+    font-size: 0;
+    padding: 10px 0;
+}
+#footer ul li{
+    display: inline-block; 
+    margin: 0 10px;
+    width: 40px; height: 40px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+}
+
+#footer ul li a{
+    font-size: 16px;
+    line-height: 40px;
+    color: #fff;
+}
+#footer ul li:hover a{
+    color: #f60;
+}
+#footer ul li:hover{border: 1px solid #f60;}
+#footer .logo{
+    padding: 10px 0;
+}
+#footer .txt{
+    color: #fff;
+    padding: 14px 0;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+/*#topBtn (상단으로 이동)*/
+#topBtn{
+    position: fixed; 
+    bottom: 0; 
+    right: 20px;
+}
+#topBtn a{
+    display: block;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    background-color: #f60;
+    color: #fff;
+    border-radius: 4px;
+}
+
+
 
 
 
