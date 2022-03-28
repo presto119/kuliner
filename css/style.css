@@ -500,14 +500,11 @@ a{text-decoration: none;}
     color: #999;
 }
 #register .wrap .cont .send_check{
-    font-size: 0;
 }
 #register .wrap .cont .send_check input{
-    display: inline-block;
     width: 12px;
 }
-#register .wrap .cont .send_check p{
-    display: inline-block;
+#register .wrap .cont .send_check span{
     font-size: 12px;
     vertical-align: top;
 }
