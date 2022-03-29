@@ -452,7 +452,7 @@ a{text-decoration: none;}
 }
 
 
-/*register part*/
+/*#register part*/
 #register{
     background-color: #ededed;
     padding: 20px 0;
@@ -468,23 +468,26 @@ a{text-decoration: none;}
     width: calc(50% - 40px);
     margin: 0 20px;
 }
-#register .wrap #map{
+#register .wrap .left #map{
     height: 400px;
 }
-#register .wrap .cont{
+#register .wrap .right{
     display: inline-block;
     vertical-align: top;
     position: relative;
 }
-#register .wrap .cont .title{
-    font-size: 54px;
-    line-height: 72px;
+#register .wrap .right .title{
+    
     color: #555;
     text-align: center;
     padding-bottom: 20px;
 }
-#register .wrap .cont .info{font-size: 0;}
-#register .wrap .cont .info > div{
+#register .wrap .right .title h2{
+    font-size: 54px;
+    line-height: 72px;
+}
+#register .wrap .right .cont{font-size: 0;}
+#register .wrap .right .cont > div{
     width: 100%;
     font-size: 0px;
     padding:0 20px;
@@ -492,24 +495,24 @@ a{text-decoration: none;}
     margin-bottom: 8px;
 }
 
-#register .wrap .cont .info input{
+#register .wrap .right .cont input{
     background-color: transparent;
     border: none;
     font-size: 18px;
     line-height: 35px;
     color: #999;
 }
-#register .wrap .cont .send_check{
+#register .wrap .right .send_check{
 }
-#register .wrap .cont .send_check input{
+#register .wrap .right .send_check input{
     width: 12px;
 }
-#register .wrap .cont .send_check span{
+#register .wrap .right .send_check span{
     font-size: 12px;
     vertical-align: top;
 }
 
-#register .wrap .cont .submit_btn{
+#register .wrap .right .submit_btn{
     width: 240px; height: 41px;
     font-size: 18px;
     background-color: #f60;
@@ -518,7 +521,7 @@ a{text-decoration: none;}
     position: absolute;
     right: 0;
 }
-#register .wrap .cont .submit_btn button{
+#register .wrap .right .submit_btn button{
     width: 100%; height: 100%;
     background-color: transparent;
     border: none;
@@ -526,8 +529,74 @@ a{text-decoration: none;}
     line-height: 41px;
     cursor: pointer;
 }
+#register .wrap .right .submit_btn:hover{
+    background-color: #d40;
+}
+/*
+#register{
+    width: 100%; height: auto;
+    background-color: #ededed;
+}
+#register .wrap{
+    width: 1160px; height: auto;
+    padding: 0 10px;
+    margin: 0 auto;
+    font-size: 0;
+}
+#register .wrap .left{
+    display: inline-block;
+    vertical-align: top;
+    width: 50%; height: 400px;
+    padding: 20px;
+}
+#register .wrap .left #map_g{
+    height: 100%;
+}
+#register .wrap .right{
+    display: inline-block;
+    vertical-align: top;
+}
+#register .wrap .right .title{
+    padding: 20px 0;
+    text-align: center;
 
-/*footer part*/
+}
+#register .wrap .right .title h2{
+    font-size: 54px;
+    line-height: 72px;
+    color: #555;
+}
+#register .wrap .right .cont{}
+#register .wrap .right .cont .input_line{
+    padding-bottom: 8px;
+}
+#register .wrap .right .cont .input_line input{
+    width: 100%; height: 35px; 
+    padding: 0 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #999;
+    outline-color: #f60;
+    outline-width: 1px;
+}
+#register .wrap .right .cont input[type="checkbox"]{height: 12px;}
+#register .wrap .right .cont span{font-size: 16px;}
+#register .wrap .right .cont .btn{text-align: right;}
+#register .wrap .right .cont .btn input{
+    width: 240px; height: 41px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #f60;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#register .wrap .right .cont .btn input:hover{
+    background-color: #d40;
+}
+*/
+
+/*#footer part*/
 
 #footer{
     width: 100%; height: 220px;
@@ -542,21 +611,22 @@ a{text-decoration: none;}
 }
 #footer ul li{
     display: inline-block; 
-    margin: 0 10px;
-    width: 40px; height: 40px;
-    border: 1px solid #fff;
-    border-radius: 20px;
+    margin: 0 10px;   
 }
 
 #footer ul li a{
+    width: 40px; height: 40px;
+    display: block;
     font-size: 16px;
-    line-height: 40px;
+    line-height: 38px;
     color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
 }
 #footer ul li:hover a{
     color: #f60;
+    border: 1px solid #f60;
 }
-#footer ul li:hover{border: 1px solid #f60;}
 #footer .logo{
     padding: 10px 0;
 }
@@ -566,12 +636,60 @@ a{text-decoration: none;}
     font-weight: lighter;
     font-size: 14px;
 }
+/*
+#footer{
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    text-align: center;
+}
+#footer .wrap{
+    width: 1160px;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+#footer .wrap .sns{}
+#footer .wrap .sns ul{
+    font-size: 0;
+}
+#footer .wrap .sns ul li{
+    display: inline-block;
+    margin: 10px;
+}
+#footer .wrap .sns ul li a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    border:1px solid #fff;
+    color:#fff;
+    font-size: 16px;
+    line-height: 38px;
+    border-radius:50%;
+}
+#footer .wrap .sns ul li:hover a{
+    color:#f60;
+    border: 1px solid #f60;
+}
+#footer .wrap .f_logo{
+    padding: 10px 0;
+    font-size: 0;
+}
+#footer .wrap .f_logo img{}
+
+#footer .wrap p{
+    font-size: 14px; 
+    padding: 14px 0; 
+    color:#fff;
+}
+*/
 
 /*#topBtn (상단으로 이동)*/
 #topBtn{
     position: fixed; 
     bottom: 0; 
     right: 20px;
+    z-index: 10;
 }
 #topBtn a{
     display: block;
@@ -582,6 +700,7 @@ a{text-decoration: none;}
     background-color: #f60;
     color: #fff;
     border-radius: 4px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
 }
 
 
